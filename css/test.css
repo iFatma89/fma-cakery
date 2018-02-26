@@ -1,0 +1,175 @@
+  #top-header { 
+    background-color: #ff80aa;
+    color: #fff;
+    font-size: 12px;
+    margin: 5px;
+    max-height: 45px;
+  }
+  .top-contact {
+    display: inline-block;
+  }
+   .top-contact span i {
+    padding-right: 19px;
+  }
+  .top-contact a {
+    text-decoration: none;
+    color: #fff;
+  } 
+  .dropdown {
+    display: inline-block;
+        float: right;
+      
+  }
+  .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 20px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 13px;
+      background-color: inherit;
+      width: 50px;
+  }
+
+  #top-header a:hover, .dropdown:hover .dropbtn {
+      background-color: lightpink;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ff80aa;
+      min-width: 50px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 8px;
+      
+  }
+
+  .dropdown-content a {
+      float: none;
+      color: white;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding-bottom: 15px;
+      padding-top: 15px;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+
+  .show {
+      display: block;
+  }
+  /********** Medium & large devices only **********/
+@media (min-width: 600px) {
+  .top-contact span a { 
+    padding: 16px 0px;
+  }
+  .dropdown .dropbtn {
+      display: none;
+  }
+  .dropdown-content {
+    box-shadow: none;
+  }
+    .dropdown-content a {
+      display: inline-block;
+
+    }
+    .top-social {
+      float: right;
+      display: inline-block;
+      height: 45px;
+      margin: auto;
+    }
+    .top-social a {
+        padding: 0px;
+    } 
+}
+
+  /********** Small devices only **********/
+@media (max-width: 380px) {
+  #top-header {
+    min-height: 80px;
+  }
+  .top-contact {
+  }
+  .top-contact span {
+    display: block;
+    height: 40px;
+  }
+  .top-contact span a {
+    padding: 13px 0px;
+  }
+  .dropdown .dropbtn {
+    padding-top: 35px;
+    padding: 13px;
+  }
+}
+
+
+
+
+
+
+
+/** HEADER **/
+#header-nav {
+  background-color: #ffd9cc;
+  background-image: url('../images/rbackground-header1.png');
+  background-size: cover;
+  border-right: 0;
+  border:0;
+}
+
+#logo-img {
+  background-image: url('../images/logo-large.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-header {
+  margin: auto;
+}
+
+.navbar-brand h1 { /*Cakery name*/
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px #222;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+} 
+
+.navbar-brand p span { /*Subtitle*/
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 30px;
+  color: #ffcccc;
+   text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.naving {
+  background-image: none;
+  color: ;
+  background-color: #ffd9cc;
+}

@@ -1,0 +1,613 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #e6ffff;
+  font-family: Arial, 'Abril Fatface', cursive;
+  margin: 0px;
+}
+p, h3, ul, table {
+  color: black;
+}
+/** HEADER **/
+  #top-header { 
+    background-color: #ff80aa;
+    color: #fff;
+    font-size: 12px;
+    margin: 5px;
+    max-height: 45px;
+  }
+  .top-contact {
+    display: inline-block;
+    padding: 16px 0px;
+    max-height: 45px;
+  }
+  .top-contact span {
+    padding: 0px 15px;
+  }
+  .top-contact span i {
+    padding: 0px 8px;
+  }
+  .top-contact a {
+    text-decoration: none;
+    color: #fff;
+  } 
+  .dropdown {
+    display: inline-block;
+    float: right;
+      
+  }
+  .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 20px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 13px;
+      background-color: inherit;
+      width: 50px;
+      height: 45px;
+  }
+  #top-header a:hover, .dropdown:hover .dropbtn {
+      background-color: lightpink;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ff80aa;
+      min-width: 50px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 7px;
+      
+  }
+
+  .dropdown-content a {
+      float: none;
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 16px 20px;
+      width: 50px;
+      height: 45px;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+
+  .show {
+      display: block;
+  }
+  /********** Medium & large devices only **********/
+@media (min-width: 600px) {
+  .top-contact span a { 
+    padding: 16px 0px;
+  }
+  .dropdown .dropbtn {
+      display: none;
+  }
+  .dropdown-content {
+    box-shadow: none;
+  } 
+  .top-social {
+    float: right;
+    display: inline-block;
+    height: 45px;
+    right: 5px;
+  }
+  .top-social a {
+    display: inline-block;
+    padding: 16px 20px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 599px) {
+  .top-social {
+    right: 5px;
+  }
+}
+
+  /********** Small devices only **********/
+@media (max-width: 420px) {
+  #top-header {
+    min-height: 80px;
+  }
+  .top-contact {
+    padding: 0px;
+  }
+  .top-contact span {
+    display: block;
+    margin: 0px;
+    padding: 13px;
+  }
+  .dropdown {
+    padding-top: 35px;
+  }
+  .top-social {
+    right: 5px;
+  }
+}
+header {
+  clear: right;
+  background-color: #ffcccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  margin-top: 40px;
+  padding: 20px; 
+  border-radius: 10px;
+}
+#logo-img {
+  background-image: url('../images/logo-large1.png');
+  background-size: cover;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+h1 {
+  color:black;
+  font-size: 4vw;
+  font-family: 'Berkshire Swash', cursive;
+}
+.second span {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2vw;
+}
+.first, .second, .third {
+  text-align: center;
+  flex: 1;
+}
+.second {
+  flex: 2;
+  line-height: 15px;
+}
+.third {
+  white-space: nowrap;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.7vw;
+  line-height: 5px;
+}
+
+/** NAVIGATION BAR**/
+nav {
+  display: flex;
+  /*background-color: #ffcccc; */
+  margin: 15px;
+  padding: 10px;
+}
+.nav-bar a {
+  text-decoration: none;
+  background-color: lightblue;
+  flex: 1;
+  text-align: center;
+/*  font-size: 15px;
+  margin: 5px;
+  padding: 10px;
+*/
+  font-size: 12px;
+  margin: -10px;
+  padding: 0px;
+}
+nav a:link, nav a:visited {
+    background-color: #d2e0e0;
+    color: black;
+    border: 3px solid lightpink;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+nav a:hover, nav a:active {
+    background-color: lightpink;
+    color: white;
+}
+
+/** MAIN CONTENT **/
+h3 {
+  text-align: center;
+}
+main { 
+  min-height: calc(100vh - 200px);
+} 
+.container {
+  display: flex;
+  margin: 15px;
+  padding: 10px;
+  border-top: 2px solid #ffcccc;
+  border-bottom: 2px solid #ffcccc; 
+}
+.container a {
+  text-decoration: none;
+  background-color: #d2e0e0;
+  width: 25%;
+  height: 150px;
+  font-size: 15px;
+  margin: 15px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+.contact-title {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.contact-info p i {
+  line-height: 0px;
+}
+.fma-map {
+  border: 2px solid #ffcccc;
+  padding: 5px;
+  padding-bottom: 2px;
+  width: 80vw;
+  margin: auto;
+}
+iframe {
+  width: 100%;
+}
+#about-info {
+  margin: 15px;
+  margin-top: 35px;
+}
+#about-info p {
+  text-align: justify;
+  font-family: 'Qwigley', cursive;
+}
+#about-info ul {
+  list-style-type: square;
+  list-style-position: inside;
+  font-family: 'Marcellus SC', serif;
+}
+.imageleft {
+  float: left;
+  margin: 15px;  
+}
+.imageright {
+  clear: left;
+  float: right;
+  margin: 15px;  
+}
+.column {
+  float: left;
+  width: 33.33%; 
+  margin: 35px 0px;
+  text-align: center;
+}
+.column img {
+  border: 1px solid black;
+}
+/* Clear floats after the columns */
+.cupcake-row:after {
+  clear: both;
+}
+/** Cakes Main **/
+#cake-category {
+  display: block;
+  max-width: 1100px;
+  min-width: 280px;
+  padding-top: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/** Filters List **/
+#filter-list {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#filter-list li {
+  display: inline-block;
+  width: 180px;
+  padding: 6px 20px;
+  margin: 5px auto;
+  font-size: 1em;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 #fff;
+  border: 1px solid black;
+}
+#filter-list li:hover {
+  background: lightblue;
+}
+#filter-list li.active {
+  font-weight: bold;
+  background: lightpink;
+}
+
+
+/** cake-gallery List **/
+#cake-gallery {
+  display: block;
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+#cake-gallery .item {
+  display: none;
+  opacity: 0;
+  width: 45%;
+  vertical-align: top;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  text-align: center;
+  
+}
+#cake-gallery .item a {
+  display: inline-block;
+  max-width: 100%;
+  text-decoration: none;
+  background: #fff;
+
+}
+#cake-gallery .item img {
+  padding: 3px;
+  max-width: 100%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+/** Media Queries **/
+@media screen and (max-width: 720px) {
+  h3 { font-size: 2.7em; }
+}
+
+@media screen and (max-width: 500px) {
+  h3 { font-size: 2.0em; }
+  #filter-list { padding: 0 18px; }
+  #filter-list li { display: block; margin-bottom: 3px; }
+  
+  #cake-gallery { margin-bottom: 20px; }
+  #cake-gallery .item { width: 100%; margin-bottom: 12px; margin-right: 0; }
+}
+
+/** Cupcake Cake Main **/
+.cupcake-cake-row {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.cupcake-cake-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.cupcake-cake-column img {
+  width: 100%;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media (max-width: 800px) {
+  .cupcake-cake-column {
+      flex: 33%;
+      max-width: 33%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .cupcake-cake-column {
+    flex: 50%;
+    max-width: 50%; 
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 350px) {
+  .cupcake-cake-column {
+    flex: 100%;
+    max-width: 100%; 
+  }
+}
+/*#cupcake-gallery {
+height: 1000px;
+border: 1px solid black;
+}
+#cupcake-gallery img {
+  float: left;
+  height: 15em; 
+  margin-right: 1%; 
+  margin-bottom: 0.5em;
+}*/
+
+/*.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}*/
+/** FOOTER **/
+footer {
+  clear: both;
+  background-color: #ffcccc;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+  margin: 5px;
+  padding: 20px; 
+  border-radius: 10px;
+}
+.copyright, .quote, .follow-me {
+  text-align: center;
+  flex: 1;
+}
+/* Style all font awesome icons */
+/*.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+*/
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+/*.fa-facebook {
+  background: #3b5998;
+  color: white;
+}*/
+/* Instagram */
+/*.fa-instagram {
+  background: #c13584;
+  color: white;
+}*/
+/* Whatsapp */
+/*.fa-whatsapp {
+  background: #25d366;
+  color: white;
+}*/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {}
+
+
+/*-------------------*/
+@media (max-width: 833px) {
+  .nav-bar a {
+    font-weight: 10px;
+  }
+}
+
+
+/*--------------------------------------*/
+main {
+  margin: 20px 10px;
+}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 1px solid pink;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
